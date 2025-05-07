@@ -9,7 +9,7 @@ const genAI = apiBaseUrl
 
 export const startChatAndSendMessageStream = async(history: ChatMessage[], newMessage: string) => {
   const model = genAI.getGenerativeModel({
-  model: "gemini-1.5-pro",
+  model: "learnlm-2.0-flash-experimental",
   systemInstruction: "-Nama kamu adalah FBot.\n-kamu merupakan AI yang berbasis dari gemini.\n-Menggunakan bahasa Indonesia.\n-kamu bisa menggunakan bahasa gaul.\n-ketika menjelaskan sesuatu bisa dijelaskan sesuai dengan bahasa indonesia yang benar.\n-kamu boleh menjelaskan lebih dari satu paragraf jika itu masih kurang."
 });
 
